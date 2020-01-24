@@ -54,7 +54,7 @@ function submit(e){
   e.preventDefault();
   const p= document.createElement("p");
   const comment = document.createTextNode("nader");
-  o.append(comment);
+  o.appendChild(comment);
   document.querySelector('#list.comments').appendChild(p);
 }
 
