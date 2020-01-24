@@ -40,5 +40,5 @@ document.addEventListener("DOMContentLoaded",function(){
   document.getElementById('plus').addEventListener("click" ,() => changeCounter(true) );
   document.getElementById('minus').addEventListener("click" ,() => changeCounter(false) );
   document.getElementById('heart').addEventListener("click" ,() => addlikes() );
-  document.getElementById('pause').addEventListener("click" ,() => pause );
+  document.getElementById('pause').addEventListener("click" ,() => pause() );
 });
