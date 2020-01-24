@@ -43,5 +43,5 @@ document.addEventListener("DOMContentLoaded",function(){
   document.getElementById('heart').addEventListener("click" ,() => addlikes() );
   document.getElementById('pause').addEventListener("click" ,() => pause() );
 
-  
+
 });
