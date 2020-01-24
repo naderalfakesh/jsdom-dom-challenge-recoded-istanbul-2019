@@ -1,5 +1,5 @@
 function changeCounter(up){
-  console.log("counter");
+  // console.log("counter");
   const counter = document.getElementById('counter');
   const currentCount = document.getElementById('counter').textContent;
   counter.textContent = parseInt(currentCount) + (up? 1 : -1)
