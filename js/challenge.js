@@ -20,6 +20,7 @@ function addlikes(){
 
   if(currentCount == lastLi){
     times++;
+    document.getElementById(`count-${currentCount}`).textContent = `Number ${currentCount} is clicked ${times} times.`
   }
   else{
     li.textContent= `Number ${currentCount} is clicked ${times} times.`
