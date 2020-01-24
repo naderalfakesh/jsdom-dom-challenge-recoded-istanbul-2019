@@ -8,6 +8,7 @@ function changeCounter(up){
 function addlikes(){
   const currentCount = document.getElementById('counter').textContent;
   if(document.querySelectorAll('.likes li') ){
+    let lastLi = document.querySelectorAll('.likes li');
     lastLi = lastLi[lastLi.length-1].textContent;
     lastLi = lastLi.split(" ")[1];
     console.log(lastLi)
