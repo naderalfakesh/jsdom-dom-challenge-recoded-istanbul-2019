@@ -30,12 +30,17 @@ function addlikes(){
 }
 
 function pause(){
-  console.log(oneSecInterval);
-  clearInterval(oneSecInterval);
-  console.log(oneSecInterval);
+  if(pauseStatus){
+    clearInterval(oneSecInterval);
   }
+  else{
+    oneSecInterval= setInterval(() => changeCounter(true),1000);
+    
+  }
+}
 
 let oneSecInterval;
+let pauseStatus = false;
 document.addEventListener("DOMContentLoaded",function(){
   oneSecInterval= setInterval(() => changeCounter(true),1000);
   document.getElementById('plus').addEventListener("click" ,() => changeCounter(true) );
