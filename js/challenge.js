@@ -8,7 +8,7 @@ function changeCounter(up){
 function addlikes(){
   const currentCount = document.getElementById('counter').textContent;
   const li = document.createElement("li");
-  li.textContent= "nader"
+  li.textContent= `Number ${currentCount} is clicked ${5} times.`
   document.getElementsByClassName('likes')[0].appendChild(li);
 }
 document.addEventListener("DOMContentLoaded",function(){
