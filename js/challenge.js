@@ -53,7 +53,8 @@ function pause(){
 function submit(e){
   e.preventDefault();
   let p= document.createElement("p");
-  let text = document.createTextNode("naderasdasd asdasd");
+  const text = document.getElementById("comment-input").value;
+  const coment = document.createTextNode(text);
   p.appendChild(text);
   document.querySelector('#list.comments').append(p);
 }
