@@ -33,9 +33,12 @@ function pause(){
   pauseStatus = !pauseStatus;
   if(pauseStatus){
     clearInterval(oneSecInterval);
+    document.getElementById('pause').textContent = "Resume"
   }
   else{
     oneSecInterval= setInterval(() => changeCounter(true),1000);
+    document.getElementById('pause').textContent = "Pause"
+    
   }
 }
 
