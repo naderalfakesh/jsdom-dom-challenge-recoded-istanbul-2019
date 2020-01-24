@@ -6,5 +6,5 @@ function increaseCounter(){
 }
 document.addEventListener("DOMContentLoaded",function(){
   const inter= setInterval(increaseCounter,1000);
-  document.getElementById('plus').addEventListener("onClick" ,increaseCounter );
+  document.getElementById('plus').addEventListener("click" ,increaseCounter );
 });
