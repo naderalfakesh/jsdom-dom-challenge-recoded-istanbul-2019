@@ -53,9 +53,9 @@ function pause(){
 function submit(e){
   e.preventDefault();
   let p= document.createElement("p");
-  const text = document.createTextNode("naderasdasd asdasd");
+  let text = document.createTextNode("naderasdasd asdasd");
   p.appendChild(text);
-  document.querySelector('#list.comments').appendChild(p);
+  document.querySelector('#list.comments').append(p);
 }
 
 let oneSecInterval;
