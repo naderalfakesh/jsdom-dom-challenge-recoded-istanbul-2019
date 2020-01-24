@@ -36,9 +36,13 @@ function pause(){
 }
 
 document.addEventListener("DOMContentLoaded",function(){
-  var inter= setInterval(() => changeCounter(true),1000);
+  const inter= setInterval(() => changeCounter(true),1000);
   document.getElementById('plus').addEventListener("click" ,() => changeCounter(true) );
   document.getElementById('minus').addEventListener("click" ,() => changeCounter(false) );
   document.getElementById('heart').addEventListener("click" ,() => addlikes() );
   document.getElementById('pause').addEventListener("click" ,() => pause() );
+
+  function pause(){
+    console.log(inter);
+  }
 });
