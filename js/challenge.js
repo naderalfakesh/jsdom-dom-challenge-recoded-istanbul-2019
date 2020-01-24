@@ -37,6 +37,7 @@ function pause(){
     document.getElementById('plus').disabled = true;
     document.getElementById('minus').disabled = true;
     document.getElementById('heart').disabled = true;
+    document.getElementById('submit').disabled = true;
   }
   else{
     oneSecInterval= setInterval(() => changeCounter(true),1000);
@@ -44,8 +45,16 @@ function pause(){
     document.getElementById('plus').disabled = false;
     document.getElementById('minus').disabled = false;
     document.getElementById('heart').disabled = false;
+    document.getElementById('submit').disabled = false;
 
   }
+}
+
+function submit(e){
+  e.preventDefault();
+  const p= document.createElement("p");
+  p.textContent = "nader";  
+  document.querySelector('#list.comments').appendChild(p);
 }
 
 let oneSecInterval;
@@ -56,4 +65,5 @@ document.addEventListener("DOMContentLoaded",function(){
   document.getElementById('minus').addEventListener("click" ,() => changeCounter(false) );
   document.getElementById('heart').addEventListener("click" ,() => addlikes() );
   document.getElementById('pause').addEventListener("click" ,() => pause() );
+  document.getElementById('submit').addEventListener("click" ,() => submit() );
 });
