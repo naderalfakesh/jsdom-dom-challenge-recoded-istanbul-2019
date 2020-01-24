@@ -30,10 +30,15 @@ function addlikes(){
 
 
 }
+
+function pause(){
+  console.log(inter);
+}
+
 document.addEventListener("DOMContentLoaded",function(){
   const inter= setInterval(() => changeCounter(true),1000);
   document.getElementById('plus').addEventListener("click" ,() => changeCounter(true) );
   document.getElementById('minus').addEventListener("click" ,() => changeCounter(false) );
   document.getElementById('heart').addEventListener("click" ,() => addlikes() );
-  document.getElementById('pause').addEventListener("click" ,() => clearInterval(inter) );
+  document.getElementById('pause').addEventListener("click" ,() => pause );
 });
