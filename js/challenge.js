@@ -16,7 +16,6 @@ function addlikes(){
     lastLi = lastLi[lastLi.length-1].textContent;
     lastLiCount = lastLi.split(" ")[1];
     times = lastLi.split(" ")[4];
-    
   }
 
   if(currentCount == lastLiCount){
