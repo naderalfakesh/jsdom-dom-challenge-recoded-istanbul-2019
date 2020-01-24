@@ -22,7 +22,7 @@ function addlikes(){
     times++;
   }
 
-  li.textContent= `Number ${currentCount} is clicked ${5} times.`
+  li.textContent= `Number ${currentCount} is clicked ${times} times.`
   document.getElementsByClassName('likes')[0].appendChild(li);
 }
 document.addEventListener("DOMContentLoaded",function(){
