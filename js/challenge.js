@@ -6,6 +6,6 @@ function changeCounter(up){
 }
 document.addEventListener("DOMContentLoaded",function(){
   const inter= setInterval(() => changeCounter(true),1000);
-  document.getElementById('plus').addEventListener("click" ,changeCounter(true) );
-  document.getElementById('minus').addEventListener("click" ,changeCounter(false) );
+  document.getElementById('plus').addEventListener("click" ,() => changeCounter(true) );
+  document.getElementById('minus').addEventListener("click" ,() => changeCounter(false) );
 });
