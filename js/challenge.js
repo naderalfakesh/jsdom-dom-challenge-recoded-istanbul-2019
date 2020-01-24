@@ -31,9 +31,6 @@ function addlikes(){
 
 }
 
-function pause(){
-  console.log(inter);
-}
 
 document.addEventListener("DOMContentLoaded",function(){
   const inter= setInterval(() => changeCounter(true),1000);
