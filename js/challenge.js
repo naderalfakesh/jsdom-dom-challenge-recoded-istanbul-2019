@@ -41,5 +41,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
   function pause(){
     console.log(inter);
-  }
+    clearInterval(inter);
+    console.log(inter);
+    }
 });
