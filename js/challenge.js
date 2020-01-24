@@ -23,6 +23,7 @@ function addlikes(){
   }
   else{
     li.textContent= `Number ${currentCount} is clicked ${times} times.`
+    li.id = `count-${currentCount}`
     document.getElementsByClassName('likes')[0].appendChild(li);
   }
 
