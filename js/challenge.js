@@ -10,18 +10,18 @@ function addlikes(){
   let times = 1;
   const currentCount = document.getElementById('counter').textContent;
   const li = document.createElement("li");
-  
+
   if(document.querySelectorAll('.likes li')[0] ){
     lastLi = document.querySelectorAll('.likes li');
     lastLi = lastLi[lastLi.length-1].textContent;
     times = lastLi.split(" ")[4];
     lastLi = lastLi.split(" ")[1];
   }
-  
+
   if(currentCount == lastLi){
     times++;
   }
-  
+
   li.textContent= `Number ${currentCount} is clicked ${5} times.`
   document.getElementsByClassName('likes')[0].appendChild(li);
 }
