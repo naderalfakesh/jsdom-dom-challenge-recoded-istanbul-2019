@@ -10,6 +10,7 @@ function addlikes(){
   let lastLi = document.querySelectorAll('.likes li')
   lastLi = lastLi[lastLi.length-1].textContent;
   lastLi = lastLi.split(" ")[1];
+  console.log(lastLi)
   const li = document.createElement("li");
   li.textContent= `Number ${currentCount} is clicked ${5} times.`
   document.getElementsByClassName('likes')[0].appendChild(li);
