@@ -55,6 +55,7 @@ function submit(e){
   let p= document.createElement("p");
   const text = document.getElementById("comment-input").value;
   const coment = document.createTextNode(text);
+  console.log(coment)
   p.appendChild(text);
   document.querySelector('#list.comments').append(p);
 }
