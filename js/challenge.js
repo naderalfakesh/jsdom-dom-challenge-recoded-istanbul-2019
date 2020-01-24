@@ -35,7 +35,7 @@ function pause(){
   }
   else{
     oneSecInterval= setInterval(() => changeCounter(true),1000);
-    
+
   }
 }
 
