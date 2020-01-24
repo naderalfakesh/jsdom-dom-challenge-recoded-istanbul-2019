@@ -6,15 +6,15 @@ function changeCounter(up){
 }
 
 function addlikes(){
-  let lastLi = 0;
+  let lastLiCount = 0;
   let times = 1;
   const currentCount = document.getElementById('counter').textContent;
   const li = document.createElement("li");
 
   if(document.querySelectorAll('.likes li')[0] ){
-    lastLi = document.querySelectorAll('.likes li');
+    let lastLi = document.querySelectorAll('.likes li');
     lastLi = lastLi[lastLi.length-1].textContent;
-    const lastLiCount = lastLi.split(" ")[1];
+    lastLiCount = lastLi.split(" ")[1];
   }
 
   if(currentCount == lastLiCount){
