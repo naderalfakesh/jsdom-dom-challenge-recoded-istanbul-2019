@@ -21,9 +21,12 @@ function addlikes(){
   if(currentCount == lastLi){
     times++;
   }
+  else{
+    li.textContent= `Number ${currentCount} is clicked ${times} times.`
+    document.getElementsByClassName('likes')[0].appendChild(li);
+  }
 
-  li.textContent= `Number ${currentCount} is clicked ${times} times.`
-  document.getElementsByClassName('likes')[0].appendChild(li);
+
 }
 document.addEventListener("DOMContentLoaded",function(){
   const inter= setInterval(() => changeCounter(true),1000);
