@@ -38,7 +38,7 @@ function pause(){
   else{
     oneSecInterval= setInterval(() => changeCounter(true),1000);
     document.getElementById('pause').textContent = "Pause"
-    
+
   }
 }
 
