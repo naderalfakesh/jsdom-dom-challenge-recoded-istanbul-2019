@@ -30,6 +30,7 @@ function addlikes(){
 }
 
 function pause(){
+  pauseStatus = !pauseStatus;
   if(pauseStatus){
     clearInterval(oneSecInterval);
   }
