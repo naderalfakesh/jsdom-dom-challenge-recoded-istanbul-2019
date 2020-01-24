@@ -14,11 +14,12 @@ function addlikes(){
   if(document.querySelectorAll('.likes li')[0] ){
     lastLi = document.querySelectorAll('.likes li');
     lastLi = lastLi[lastLi.length-1].textContent;
-    times = lastLi.split(" ")[4];
-    lastLi = lastLi.split(" ")[1];
+    const lastLiCount = lastLi.split(" ")[1];
   }
 
-  if(currentCount == lastLi){
+  if(currentCount == lastLiCount){
+    times = lastLi.split(" ")[4];
+    
     times++;
     document.getElementById(`count-${currentCount}`).textContent = `Number ${currentCount} is clicked ${times} times.`
   }
