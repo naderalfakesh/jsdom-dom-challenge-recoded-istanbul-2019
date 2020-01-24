@@ -5,7 +5,7 @@ function changeCounter(up){
   counter.textContent = parseInt(currentCount) + (up? 1 : -1)
 }
 document.addEventListener("DOMContentLoaded",function(){
-  const inter= setInterval(changeCounter(true),1000);
+  const inter= setInterval(() => changeCounter(true),1000);
   document.getElementById('plus').addEventListener("click" ,changeCounter(true) );
   document.getElementById('minus').addEventListener("click" ,changeCounter(false) );
 });
