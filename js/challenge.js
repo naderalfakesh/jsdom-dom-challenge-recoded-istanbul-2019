@@ -19,7 +19,7 @@ function addlikes(){
 
   if(currentCount == lastLiCount){
     times = lastLi.split(" ")[4];
-    
+
     times++;
     document.getElementById(`count-${currentCount}`).textContent = `Number ${currentCount} is clicked ${times} times.`
   }
