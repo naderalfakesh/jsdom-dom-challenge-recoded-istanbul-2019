@@ -54,7 +54,7 @@ function submit(e){
   e.preventDefault();
   let p= document.createElement("p");
   const comment = document.createTextNode("naderasdasd asdasd");
-  o.appendChild(comment);
+  p.appendChild(comment);
   document.querySelector('#list.comments').appendChild(p);
 }
 
