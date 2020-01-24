@@ -53,7 +53,8 @@ function pause(){
 function submit(e){
   e.preventDefault();
   const p= document.createElement("p");
-  p.innerHtml = "nader";
+  const comment = document.createTextNode("nader");
+  o.append(comment);
   document.querySelector('#list.comments').appendChild(p);
 }
 
