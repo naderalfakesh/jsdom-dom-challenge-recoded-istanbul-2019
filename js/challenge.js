@@ -4,8 +4,5 @@ function increaseCounter(){
   counter.innerhtml = parseInt(currentCount)+1
 }
 document.addEventListener("DOMContentLoaded",function(){
-  const inter= setInterval(increaseCounter,1000); 
-
-
-  
+  const inter= setInterval(increaseCounter,1000);
 });
